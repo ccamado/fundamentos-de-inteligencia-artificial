@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Criatividade para melhorar a comunicação escolar - Fundamentos de Inteligência Artificial</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="index.html" class="btn-back">← Voltar ao Menu</a>
+<div class="aula-container">
+  <div class="aula-hero">
+    <div class="aula-num">SEMANA 2</div>
+    <h1>💡 Criatividade para melhorar a comunicação escolar</h1>
+    <div class="aula-meta">
+      <span>📅 12/05/2026</span>
+      <span>⏱ 50 minutos</span>
+      <span>🎯 Central de Avisos</span>
+      <span>📚 Fundamentos de Inteligência Artificial</span>
+    </div>
+  </div>
+  <div class="card">
+    <h2>🎯 O que vamos aprender?</h2>
+    <p>Nesta aula, vamos trabalhar criatividade de forma útil: pensar melhorias reais para a Central de Avisos, sem fugir do problema da escola.</p>
+    <div class="destaque">💡 Aplicação no projeto: As ideias devem ajudar os alunos a localizar provas, horários, prazos e comunicados com mais clareza e rapidez.</div>
+  </div>
+  <div class="card roxo">
+    <h2>📘 Conteúdo principal</h2>
+    <div class="conceito-box"><strong>Conceito central:</strong> Criatividade é pensar possibilidades para resolver um problema real.</div>
+    <p>Criar não é inventar qualquer coisa. No contexto do projeto, criatividade significa imaginar soluções que façam sentido para a rotina da escola. Uma ideia pode ser simples e, ainda assim, ser muito boa. Por exemplo: separar avisos por tipo, destacar recados urgentes ou organizar informações por turma. Quanto mais útil a ideia for para os alunos, mais valor ela tem no projeto.</p>
+  </div>
+  <div class="caderno-section">
+    <h3>📝 Resumo para o Caderno — Criatividade no projeto</h3>
+    <ol>
+      <li>Criatividade é pensar possibilidades para resolver problemas.</li>
+      <li>No projeto, a criatividade deve estar ligada à comunicação escolar.</li>
+      <li>Uma boa ideia ajuda o aluno a encontrar informações importantes.</li>
+      <li>Ideias simples também podem ser muito úteis.</li>
+      <li>A Central de Avisos precisa melhorar provas, horários, prazos e comunicados.</li>
+      <li>Criar com foco no problema evita soluções vagas.</li>
+      <li>Uma ideia deve fazer sentido para a realidade da escola.</li>
+      <li>Separar avisos por tipo é um exemplo de ideia útil.</li>
+      <li>Destacar urgência também pode ajudar a comunicação.</li>
+      <li>Criatividade no projeto precisa ter clareza e finalidade.</li>
+    </ol>
+  </div>
+  <div class="quiz-section">
+    <h2>🎮 Quiz — Criatividade no projeto</h2>
+    <p style="opacity:0.8;margin-bottom:16px">10 questões para testar seu conhecimento!</p>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0 20px;">
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Pontos</div><div id="score" style="font-size:24px;">0</div></div>
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Acertos</div><div id="hits" style="font-size:24px;">0</div></div>
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Respondidas</div><div id="answered" style="font-size:24px;">0/10</div></div>
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Nível</div><div id="level" style="font-size:24px;">Iniciante</div></div>
+  </div>
+  <div style="background:rgba(255,255,255,.18);border-radius:999px;height:16px;overflow:hidden;margin:12px 0 10px;">
+    <div id="progressBar" style="height:100%;width:0%;background:linear-gradient(90deg,#FBBF24,#22C55E);transition:width .3s;"></div>
+  </div>
+  <div style="display:flex;gap:14px;flex-wrap:wrap;margin:0 0 18px;">
+    <div style="background:rgba(255,255,255,.14);padding:8px 14px;border-radius:999px;">⭐ <span id="message">Comece o quiz!</span></div>
+    <div style="background:rgba(255,255,255,.14);padding:8px 14px;border-radius:999px;">❌ Erros: <span id="errors">0</span></div>
+    <div style="background:rgba(255,255,255,.14);padding:8px 14px;border-radius:999px;">📌 Restantes: <span id="remaining">10</span></div>
+  </div>
+
+<div id="quizQuestions">
+<div class="quiz-item" data-correct="0" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">1. O que significa criatividade nesta aula?</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Pensar soluções para um problema real</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Decorar palavras difíceis</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Usar só tecnologia avançada</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Escrever sem objetivo</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="1" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">2. No projeto, as ideias devem melhorar principalmente:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>A pintura da escola</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>A comunicação escolar</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>O uniforme</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>A merenda</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="2" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">3. Qual é um exemplo de ideia útil para a Central?</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Apagar os avisos antigos sem ler</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Misturar todas as mensagens</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Separar avisos por tipo</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Deixar cada um procurar sozinho</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="3" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">4. Uma boa ideia precisa ser:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Sem relação com o problema</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Sempre muito complicada</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Difícil de entender</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Útil para a realidade da escola</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="0" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">5. Qual tema não deve ser perdido de vista?</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Comunicação de provas, horários, prazos e comunicados</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Somente decoração da sala</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Compra de equipamentos</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Notas de outras turmas</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="1" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">6. Criatividade e problema real devem estar:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Separados</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Ligados</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Sem relação</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Escondidos</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="2" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">7. Uma ideia simples pode ser boa?</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Não</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Só em casa</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Sim, se ajudar a resolver o problema</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Apenas se usar IA generativa</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="3" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">8. O foco da aula foi gerar:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Desenhos aleatórios</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Códigos de programação</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Listas sem sentido</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Melhorias reais para a Central</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="0" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">9. Destacar avisos urgentes é exemplo de:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Ideia útil</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Perda de informação</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Confusão</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Tema fora do projeto</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="1" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">10. Criatividade no projeto deve produzir:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Mais dúvidas</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Soluções mais claras</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Menos organização</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Textos sem finalidade</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+</div>
+
+<div id="quizFinal" style="display:none;background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-top:18px;">
+<h3 style="margin-bottom:8px;">🏁 Resultado final</h3>
+<p id="finalText" style="line-height:1.5;"></p>
+<button type="button" onclick="restartQuiz()" style="margin-top:12px;padding:12px 18px;border:none;border-radius:12px;background:#FFB347;color:#1F0A3C;font-weight:800;cursor:pointer;">🔄 Reiniciar quiz</button>
+</div>
+<script>
+(function(){
+  const items=[...document.querySelectorAll('.quiz-item')];
+  let score=0,hits=0,answered=0;
+  function updatePanel(){
+    document.getElementById('score').textContent=score;
+    document.getElementById('hits').textContent=hits;
+    document.getElementById('answered').textContent=`${answered}/10`;
+    document.getElementById('errors').textContent=answered-hits;
+    document.getElementById('remaining').textContent=10-answered;
+    document.getElementById('progressBar').style.width=(answered*10)+'%';
+    let level='Iniciante';
+    if(score>=80) level='Especialista';
+    else if(score>=50) level='Avançando';
+    else if(score>=20) level='Em prática';
+    document.getElementById('level').textContent=level;
+    document.getElementById('message').textContent = answered===0 ? 'Comece o quiz!' :
+      answered<10 ? (hits>=answered/2 ? 'Bom trabalho! Continue assim.' : 'Atenção aos conceitos principais.') :
+      (score>=70 ? 'Ótimo desempenho!' : 'Revise o resumo e tente de novo.');
+    if(answered===10){
+      document.getElementById('quizFinal').style.display='block';
+      document.getElementById('finalText').textContent=`Você concluiu o quiz com ${score} pontos, ${hits} acertos e ${10-hits} erros.`;
+    }
+  }
+  items.forEach(item=>{
+    const correct=Number(item.dataset.correct);
+    const buttons=[...item.querySelectorAll('.quiz-option')];
+    const feedback=item.querySelector('.quiz-feedback');
+    buttons.forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        if(item.dataset.done==='1') return;
+        item.dataset.done='1';
+        answered++;
+        const selected=Number(btn.dataset.index);
+        buttons.forEach((b,i)=>{
+          b.disabled=true;
+          b.style.cursor='default';
+          if(i===correct){
+            b.style.background='#DCFCE7';
+            b.style.borderColor='#22C55E';
+          }
+        });
+        if(selected===correct){
+          score+=10; hits++;
+          btn.style.background='#DCFCE7';
+          btn.style.borderColor='#22C55E';
+          feedback.textContent='✅ Resposta correta!';
+          feedback.style.color='#166534';
+        }else{
+          btn.style.background='#FEE2E2';
+          btn.style.borderColor='#EF4444';
+          feedback.textContent='❌ Resposta incorreta.';
+          feedback.style.color='#991B1B';
+        }
+        updatePanel();
+      });
+    });
+  });
+  window.restartQuiz=function(){
+    score=0;hits=0;answered=0;
+    items.forEach(item=>{
+      item.dataset.done='0';
+      item.querySelector('.quiz-feedback').textContent='';
+      item.querySelectorAll('.quiz-option').forEach(btn=>{
+        btn.disabled=false;
+        btn.style.cursor='pointer';
+        btn.style.background='#fff';
+        btn.style.borderColor='#D8B4FE';
+      });
+    });
+    document.getElementById('quizFinal').style.display='none';
+    updatePanel();
+  };
+  updatePanel();
+})();
+</script>
+
+</div>
+</body>
+</html>

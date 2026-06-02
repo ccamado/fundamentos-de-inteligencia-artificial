@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Storytelling: contar a solução como uma pequena história - Fundamentos de Inteligência Artificial</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="index.html" class="btn-back">← Voltar ao Menu</a>
+<div class="aula-container">
+  <div class="aula-hero">
+    <div class="aula-num">SEMANA 4</div>
+    <h1>📖 Storytelling: contar a solução como uma pequena história</h1>
+    <div class="aula-meta">
+      <span>📅 28/05/2026</span>
+      <span>⏱ 50 minutos</span>
+      <span>🎯 Central de Avisos</span>
+      <span>📚 Fundamentos de Inteligência Artificial</span>
+    </div>
+  </div>
+  <div class="card">
+    <h2>🎯 O que vamos aprender?</h2>
+    <p>Nesta aula, vamos aprender a usar storytelling para explicar a Central de Avisos como uma sequência com começo, meio e fim.</p>
+    <div class="destaque">💡 Aplicação no projeto: O storytelling ajuda a mostrar o problema, a organização da informação e o resultado para o aluno de forma lógica e interessante.</div>
+  </div>
+  <div class="card roxo">
+    <h2>📘 Conteúdo principal</h2>
+    <div class="conceito-box"><strong>Conceito central:</strong> Storytelling é contar uma ideia como uma pequena história com sequência lógica.</div>
+    <p>Quando contamos uma solução como história, ela fica mais fácil de acompanhar. No projeto, podemos criar uma sequência simples: primeiro o problema aparece, depois o aviso entra na Central, em seguida o sistema organiza a informação e, por fim, o aluno encontra o que precisa. Esse tipo de explicação ajuda a turma a comunicar melhor a solução e a mostrar o valor do projeto na rotina escolar.</p>
+  </div>
+  <div class="caderno-section">
+    <h3>📝 Resumo para o Caderno — Storytelling</h3>
+    <ol>
+      <li>Storytelling é contar uma ideia como uma pequena história.</li>
+      <li>Essa história precisa ter começo, meio e fim.</li>
+      <li>No projeto, o problema pode aparecer no início da sequência.</li>
+      <li>Depois, mostramos como o aviso entra na Central.</li>
+      <li>Em seguida, mostramos como a informação é organizada.</li>
+      <li>Por fim, aparece o resultado para o aluno.</li>
+      <li>Storytelling ajuda a comunicar a solução com mais lógica.</li>
+      <li>Ele torna a explicação mais interessante e fácil de seguir.</li>
+      <li>No projeto, essa técnica ajuda a mostrar o valor da Central de Avisos.</li>
+      <li>Uma boa história visual fortalece a compreensão da proposta.</li>
+    </ol>
+  </div>
+  <div class="quiz-section">
+    <h2>🎮 Quiz — Storytelling</h2>
+    <p style="opacity:0.8;margin-bottom:16px">10 questões para testar seu conhecimento!</p>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0 20px;">
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Pontos</div><div id="score" style="font-size:24px;">0</div></div>
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Acertos</div><div id="hits" style="font-size:24px;">0</div></div>
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Respondidas</div><div id="answered" style="font-size:24px;">0/10</div></div>
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Nível</div><div id="level" style="font-size:24px;">Iniciante</div></div>
+  </div>
+  <div style="background:rgba(255,255,255,.18);border-radius:999px;height:16px;overflow:hidden;margin:12px 0 10px;">
+    <div id="progressBar" style="height:100%;width:0%;background:linear-gradient(90deg,#FBBF24,#22C55E);transition:width .3s;"></div>
+  </div>
+  <div style="display:flex;gap:14px;flex-wrap:wrap;margin:0 0 18px;">
+    <div style="background:rgba(255,255,255,.14);padding:8px 14px;border-radius:999px;">⭐ <span id="message">Comece o quiz!</span></div>
+    <div style="background:rgba(255,255,255,.14);padding:8px 14px;border-radius:999px;">❌ Erros: <span id="errors">0</span></div>
+    <div style="background:rgba(255,255,255,.14);padding:8px 14px;border-radius:999px;">📌 Restantes: <span id="remaining">10</span></div>
+  </div>
+
+<div id="quizQuestions">
+<div class="quiz-item" data-correct="0" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">1. O que é storytelling nesta aula?</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Contar a solução como pequena história</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Escrever uma prova</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Montar uma planilha</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Criar um mural sem sentido</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="1" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">2. Uma história precisa ter:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Só início</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Começo, meio e fim</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Somente conclusão</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Apenas desenhos</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="2" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">3. No projeto, o que pode aparecer primeiro?</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>A correção da prova</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>O resultado final</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>O problema</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>A lista de chamada</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="3" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">4. Depois do problema, podemos mostrar:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>O fim da aula</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>A merenda do dia</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>A troca de uniforme</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>A entrada do aviso na Central</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="0" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">5. O storytelling ajuda a explicação a ficar:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Mais lógica</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Mais confusa</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Sem sequência</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Mais escondida</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="1" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">6. No projeto, ele mostra o valor de:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Material escolar</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Central de Avisos</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Quadra</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Intervalo</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="2" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">7. Uma boa sequência termina com:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Fim dos avisos</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Mudança de turma</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Resultado para o aluno</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Apagamento da informação</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="3" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">8. Storytelling torna a explicação:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Mais aleatória</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Mais vazia</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Menos compreensível</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Mais interessante</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="0" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">9. O foco da técnica é:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Organizar a narrativa da solução</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Trocar o conteúdo da aula</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Eliminar o problema</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Copiar respostas</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="1" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">10. No projeto, storytelling e representação visual podem:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Se anular</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Trabalhar juntos</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Ser proibidos</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Substituir o resumo</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+</div>
+
+<div id="quizFinal" style="display:none;background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-top:18px;">
+<h3 style="margin-bottom:8px;">🏁 Resultado final</h3>
+<p id="finalText" style="line-height:1.5;"></p>
+<button type="button" onclick="restartQuiz()" style="margin-top:12px;padding:12px 18px;border:none;border-radius:12px;background:#FFB347;color:#1F0A3C;font-weight:800;cursor:pointer;">🔄 Reiniciar quiz</button>
+</div>
+<script>
+(function(){
+  const items=[...document.querySelectorAll('.quiz-item')];
+  let score=0,hits=0,answered=0;
+  function updatePanel(){
+    document.getElementById('score').textContent=score;
+    document.getElementById('hits').textContent=hits;
+    document.getElementById('answered').textContent=`${answered}/10`;
+    document.getElementById('errors').textContent=answered-hits;
+    document.getElementById('remaining').textContent=10-answered;
+    document.getElementById('progressBar').style.width=(answered*10)+'%';
+    let level='Iniciante';
+    if(score>=80) level='Especialista';
+    else if(score>=50) level='Avançando';
+    else if(score>=20) level='Em prática';
+    document.getElementById('level').textContent=level;
+    document.getElementById('message').textContent = answered===0 ? 'Comece o quiz!' :
+      answered<10 ? (hits>=answered/2 ? 'Bom trabalho! Continue assim.' : 'Atenção aos conceitos principais.') :
+      (score>=70 ? 'Ótimo desempenho!' : 'Revise o resumo e tente de novo.');
+    if(answered===10){
+      document.getElementById('quizFinal').style.display='block';
+      document.getElementById('finalText').textContent=`Você concluiu o quiz com ${score} pontos, ${hits} acertos e ${10-hits} erros.`;
+    }
+  }
+  items.forEach(item=>{
+    const correct=Number(item.dataset.correct);
+    const buttons=[...item.querySelectorAll('.quiz-option')];
+    const feedback=item.querySelector('.quiz-feedback');
+    buttons.forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        if(item.dataset.done==='1') return;
+        item.dataset.done='1';
+        answered++;
+        const selected=Number(btn.dataset.index);
+        buttons.forEach((b,i)=>{
+          b.disabled=true;
+          b.style.cursor='default';
+          if(i===correct){
+            b.style.background='#DCFCE7';
+            b.style.borderColor='#22C55E';
+          }
+        });
+        if(selected===correct){
+          score+=10; hits++;
+          btn.style.background='#DCFCE7';
+          btn.style.borderColor='#22C55E';
+          feedback.textContent='✅ Resposta correta!';
+          feedback.style.color='#166534';
+        }else{
+          btn.style.background='#FEE2E2';
+          btn.style.borderColor='#EF4444';
+          feedback.textContent='❌ Resposta incorreta.';
+          feedback.style.color='#991B1B';
+        }
+        updatePanel();
+      });
+    });
+  });
+  window.restartQuiz=function(){
+    score=0;hits=0;answered=0;
+    items.forEach(item=>{
+      item.dataset.done='0';
+      item.querySelector('.quiz-feedback').textContent='';
+      item.querySelectorAll('.quiz-option').forEach(btn=>{
+        btn.disabled=false;
+        btn.style.cursor='pointer';
+        btn.style.background='#fff';
+        btn.style.borderColor='#D8B4FE';
+      });
+    });
+    document.getElementById('quizFinal').style.display='none';
+    updatePanel();
+  };
+  updatePanel();
+})();
+</script>
+
+</div>
+</body>
+</html>

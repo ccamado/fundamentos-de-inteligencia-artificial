@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ideação estruturada: gerar ideias com mais organização - Fundamentos de Inteligência Artificial</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="index.html" class="btn-back">← Voltar ao Menu</a>
+<div class="aula-container">
+  <div class="aula-hero">
+    <div class="aula-num">SEMANA 3</div>
+    <h1>🧩 Ideação estruturada: gerar ideias com mais organização</h1>
+    <div class="aula-meta">
+      <span>📅 19/05/2026</span>
+      <span>⏱ 50 minutos</span>
+      <span>🎯 Central de Avisos</span>
+      <span>📚 Fundamentos de Inteligência Artificial</span>
+    </div>
+  </div>
+  <div class="card">
+    <h2>🎯 O que vamos aprender?</h2>
+    <p>Nesta aula, vamos trabalhar a geração de ideias de forma organizada, para evitar propostas vagas e transformar pensamentos em possibilidades mais claras.</p>
+    <div class="destaque">💡 Aplicação no projeto: A Central de Avisos precisa de ideias que estejam ligadas a problemas reais da escola e que possam ser melhoradas ao longo do projeto.</div>
+  </div>
+  <div class="card roxo">
+    <h2>📘 Conteúdo principal</h2>
+    <div class="conceito-box"><strong>Conceito central:</strong> Ideação estruturada é organizar o pensamento para gerar ideias mais claras e úteis.</div>
+    <p>Quando pensamos sem organização, surgem ideias soltas. A ideação estruturada ajuda a registrar propostas de forma mais lógica. Em vez de escrever apenas “melhorar os avisos”, a turma passa a pensar: qual problema isso resolve? o que precisa mudar? como a solução ajuda o aluno? Esse processo fortalece a construção da Central de Avisos e prepara melhor a etapa seguinte do projeto.</p>
+  </div>
+  <div class="caderno-section">
+    <h3>📝 Resumo para o Caderno — Ideação estruturada</h3>
+    <ol>
+      <li>Ideação é o processo de gerar ideias.</li>
+      <li>Ideação estruturada organiza melhor o pensamento.</li>
+      <li>Ideias soltas costumam ser vagas e pouco úteis.</li>
+      <li>No projeto, as propostas precisam resolver problemas reais.</li>
+      <li>É importante relacionar ideia e necessidade do aluno.</li>
+      <li>Pensar com organização deixa a solução mais clara.</li>
+      <li>A Central de Avisos depende de propostas bem definidas.</li>
+      <li>Gerar ideias é uma etapa importante do projeto.</li>
+      <li>Registrar as ideias ajuda a revisá-las depois.</li>
+      <li>Organizar a ideação prepara melhor a construção da solução.</li>
+    </ol>
+  </div>
+  <div class="quiz-section">
+    <h2>🎮 Quiz — Ideação estruturada</h2>
+    <p style="opacity:0.8;margin-bottom:16px">10 questões para testar seu conhecimento!</p>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0 20px;">
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Pontos</div><div id="score" style="font-size:24px;">0</div></div>
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Acertos</div><div id="hits" style="font-size:24px;">0</div></div>
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Respondidas</div><div id="answered" style="font-size:24px;">0/10</div></div>
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Nível</div><div id="level" style="font-size:24px;">Iniciante</div></div>
+  </div>
+  <div style="background:rgba(255,255,255,.18);border-radius:999px;height:16px;overflow:hidden;margin:12px 0 10px;">
+    <div id="progressBar" style="height:100%;width:0%;background:linear-gradient(90deg,#FBBF24,#22C55E);transition:width .3s;"></div>
+  </div>
+  <div style="display:flex;gap:14px;flex-wrap:wrap;margin:0 0 18px;">
+    <div style="background:rgba(255,255,255,.14);padding:8px 14px;border-radius:999px;">⭐ <span id="message">Comece o quiz!</span></div>
+    <div style="background:rgba(255,255,255,.14);padding:8px 14px;border-radius:999px;">❌ Erros: <span id="errors">0</span></div>
+    <div style="background:rgba(255,255,255,.14);padding:8px 14px;border-radius:999px;">📌 Restantes: <span id="remaining">10</span></div>
+  </div>
+
+<div id="quizQuestions">
+<div class="quiz-item" data-correct="0" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">1. O que é ideação?</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Processo de gerar ideias</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Forma de avaliar notas</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Tipo de hardware</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Modo de apagar dados</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="1" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">2. A ideação estruturada serve para:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Confundir a turma</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Organizar melhor o pensamento</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Ignorar o problema</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Copiar respostas</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="2" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">3. Ideias soltas costumam ser:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Mais claras</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Mais úteis</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Mais vagas</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Mais completas</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="3" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">4. No projeto, as ideias devem resolver:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Questões sem contexto</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Somente exercícios do livro</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>A cor da parede</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Problemas reais da escola</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="0" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">5. Qual pergunta ajuda a organizar a ideia?</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Qual problema isso resolve?</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Qual emoji usar?</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Qual caneta é melhor?</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Qual sala é mais bonita?</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="1" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">6. A Central de Avisos precisa de propostas:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Sem foco</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Bem definidas</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Aleatórias</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Sem registro</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="2" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">7. Registrar ideias ajuda a:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Diminuir a clareza</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Perder o controle</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Revisar e melhorar depois</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Parar o projeto</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="3" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">8. Organizar o pensamento torna a solução:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Mais distante do problema</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Mais confusa</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Menos útil</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Mais clara</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="0" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">9. A aula prepara melhor qual etapa futura?</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Construção da solução</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Encerramento do ano</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Mudança de turma</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Aulas de Educação Física</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="1" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">10. Ideação estruturada e projeto têm relação porque:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>As ideias não importam</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>As ideias precisam ter utilidade no projeto</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Basta desenhar qualquer coisa</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Não é necessário pensar no aluno</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+</div>
+
+<div id="quizFinal" style="display:none;background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-top:18px;">
+<h3 style="margin-bottom:8px;">🏁 Resultado final</h3>
+<p id="finalText" style="line-height:1.5;"></p>
+<button type="button" onclick="restartQuiz()" style="margin-top:12px;padding:12px 18px;border:none;border-radius:12px;background:#FFB347;color:#1F0A3C;font-weight:800;cursor:pointer;">🔄 Reiniciar quiz</button>
+</div>
+<script>
+(function(){
+  const items=[...document.querySelectorAll('.quiz-item')];
+  let score=0,hits=0,answered=0;
+  function updatePanel(){
+    document.getElementById('score').textContent=score;
+    document.getElementById('hits').textContent=hits;
+    document.getElementById('answered').textContent=`${answered}/10`;
+    document.getElementById('errors').textContent=answered-hits;
+    document.getElementById('remaining').textContent=10-answered;
+    document.getElementById('progressBar').style.width=(answered*10)+'%';
+    let level='Iniciante';
+    if(score>=80) level='Especialista';
+    else if(score>=50) level='Avançando';
+    else if(score>=20) level='Em prática';
+    document.getElementById('level').textContent=level;
+    document.getElementById('message').textContent = answered===0 ? 'Comece o quiz!' :
+      answered<10 ? (hits>=answered/2 ? 'Bom trabalho! Continue assim.' : 'Atenção aos conceitos principais.') :
+      (score>=70 ? 'Ótimo desempenho!' : 'Revise o resumo e tente de novo.');
+    if(answered===10){
+      document.getElementById('quizFinal').style.display='block';
+      document.getElementById('finalText').textContent=`Você concluiu o quiz com ${score} pontos, ${hits} acertos e ${10-hits} erros.`;
+    }
+  }
+  items.forEach(item=>{
+    const correct=Number(item.dataset.correct);
+    const buttons=[...item.querySelectorAll('.quiz-option')];
+    const feedback=item.querySelector('.quiz-feedback');
+    buttons.forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        if(item.dataset.done==='1') return;
+        item.dataset.done='1';
+        answered++;
+        const selected=Number(btn.dataset.index);
+        buttons.forEach((b,i)=>{
+          b.disabled=true;
+          b.style.cursor='default';
+          if(i===correct){
+            b.style.background='#DCFCE7';
+            b.style.borderColor='#22C55E';
+          }
+        });
+        if(selected===correct){
+          score+=10; hits++;
+          btn.style.background='#DCFCE7';
+          btn.style.borderColor='#22C55E';
+          feedback.textContent='✅ Resposta correta!';
+          feedback.style.color='#166534';
+        }else{
+          btn.style.background='#FEE2E2';
+          btn.style.borderColor='#EF4444';
+          feedback.textContent='❌ Resposta incorreta.';
+          feedback.style.color='#991B1B';
+        }
+        updatePanel();
+      });
+    });
+  });
+  window.restartQuiz=function(){
+    score=0;hits=0;answered=0;
+    items.forEach(item=>{
+      item.dataset.done='0';
+      item.querySelector('.quiz-feedback').textContent='';
+      item.querySelectorAll('.quiz-option').forEach(btn=>{
+        btn.disabled=false;
+        btn.style.cursor='pointer';
+        btn.style.background='#fff';
+        btn.style.borderColor='#D8B4FE';
+      });
+    });
+    document.getElementById('quizFinal').style.display='none';
+    updatePanel();
+  };
+  updatePanel();
+})();
+</script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prototipagem rápida: criar uma versão simples da Central de Avisos - Fundamentos de Inteligência Artificial</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="index.html" class="btn-back">← Voltar ao Menu</a>
+<div class="aula-container">
+  <div class="aula-hero">
+    <div class="aula-num">SEMANA 5</div>
+    <h1>✂️ Prototipagem rápida: criar uma versão simples da Central de Avisos</h1>
+    <div class="aula-meta">
+      <span>📅 02/06/2026</span>
+      <span>⏱ 50 minutos</span>
+      <span>🎯 Central de Avisos</span>
+      <span>📚 Fundamentos de Inteligência Artificial</span>
+    </div>
+  </div>
+  <div class="card">
+    <h2>🎯 O que vamos aprender?</h2>
+    <p>Chegou o momento de transformar a ideia em um protótipo simples. Nesta aula, vamos entender como representar a solução de forma rápida para testar se ela faz sentido.</p>
+    <div class="destaque">💡 Aplicação no projeto: A prototipagem rápida ajuda a mostrar, no papel, como a Central de Avisos pode funcionar para os alunos da escola.</div>
+  </div>
+  <div class="card roxo">
+    <h2>📘 Conteúdo principal</h2>
+    <div class="conceito-box"><strong>Conceito central:</strong> Prototipar é criar uma versão simples da solução para visualizar e testar a ideia.</div>
+    <p>Protótipo não é a versão final da solução. Ele é uma representação simples, feita para mostrar a ideia e perceber se ela funciona. Pode ser um desenho de tela, um fluxo, um quadro de organização ou um modelo de uso. No projeto, o protótipo ajuda a turma a enxergar como a Central de Avisos pode apresentar informações importantes com mais clareza. Também ajuda a perceber o que ainda precisa ser melhorado.</p>
+  </div>
+  <div class="caderno-section">
+    <h3>📝 Resumo para o Caderno — Prototipagem rápida</h3>
+    <ol>
+      <li>Prototipar é criar uma versão simples da solução.</li>
+      <li>O protótipo serve para visualizar a ideia com mais clareza.</li>
+      <li>Ele não precisa estar perfeito nem finalizado.</li>
+      <li>Pode ser feito com desenho, fluxo ou modelo em papel.</li>
+      <li>No projeto, a prototipagem ajuda a representar a Central de Avisos.</li>
+      <li>O protótipo mostra como o aluno pode acessar a informação.</li>
+      <li>Ele também ajuda a perceber falhas e melhorias.</li>
+      <li>Uma boa prototipagem torna a solução mais concreta.</li>
+      <li>Testar a ideia fica mais fácil quando ela está representada.</li>
+      <li>No projeto, prototipar é um passo importante antes de avançar.</li>
+    </ol>
+  </div>
+  <div class="quiz-section">
+    <h2>🎮 Quiz — Prototipagem rápida</h2>
+    <p style="opacity:0.8;margin-bottom:16px">10 questões para testar seu conhecimento!</p>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0 20px;">
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Pontos</div><div id="score" style="font-size:24px;">0</div></div>
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Acertos</div><div id="hits" style="font-size:24px;">0</div></div>
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Respondidas</div><div id="answered" style="font-size:24px;">0/10</div></div>
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Nível</div><div id="level" style="font-size:24px;">Iniciante</div></div>
+  </div>
+  <div style="background:rgba(255,255,255,.18);border-radius:999px;height:16px;overflow:hidden;margin:12px 0 10px;">
+    <div id="progressBar" style="height:100%;width:0%;background:linear-gradient(90deg,#FBBF24,#22C55E);transition:width .3s;"></div>
+  </div>
+  <div style="display:flex;gap:14px;flex-wrap:wrap;margin:0 0 18px;">
+    <div style="background:rgba(255,255,255,.14);padding:8px 14px;border-radius:999px;">⭐ <span id="message">Comece o quiz!</span></div>
+    <div style="background:rgba(255,255,255,.14);padding:8px 14px;border-radius:999px;">❌ Erros: <span id="errors">0</span></div>
+    <div style="background:rgba(255,255,255,.14);padding:8px 14px;border-radius:999px;">📌 Restantes: <span id="remaining">10</span></div>
+  </div>
+
+<div id="quizQuestions">
+<div class="quiz-item" data-correct="0" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">1. O que é um protótipo?</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Uma versão simples da solução</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>A versão final obrigatória</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Um tipo de prova</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Uma atividade sem objetivo</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="1" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">2. O protótipo serve para:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Encerrar o projeto</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Visualizar e testar a ideia</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Eliminar o problema</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Substituir o caderno</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="2" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">3. Ele precisa estar perfeito?</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Só no laboratório</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Sim, sempre</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Não</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Apenas no final do ano</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="3" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">4. Qual exemplo pode ser um protótipo?</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Boletim escolar</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Somente relatório escrito</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Lista de chamada</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Desenho de tela</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="0" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">5. No projeto, o protótipo ajuda a mostrar:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Como a Central pode funcionar</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>A decoração da escola</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>A quadra esportiva</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>A troca de sala</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="1" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">6. Além de mostrar a ideia, o protótipo ajuda a:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Encerrar a pesquisa</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Perceber melhorias</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Excluir avisos</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Apagar dados</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="2" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">7. Prototipagem rápida é importante porque:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Substitui a criatividade</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Aumenta a confusão</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Torna a solução mais concreta</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Dispensa planejamento</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="3" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">8. O aluno pode acessar a informação com mais clareza quando:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>O aviso não aparece</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Tudo fica misturado</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Não existe organização</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>A solução está bem representada</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="0" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">9. No projeto, prototipar acontece:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Antes de avançar mais na solução</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Depois do encerramento</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Somente após a prova</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Sem relação com a ideia</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="1" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">10. O foco da aula de hoje foi:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Aprender computação quântica</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Criar uma versão simples da Central</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Escrever só teoria</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Trocar o projeto</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+</div>
+
+<div id="quizFinal" style="display:none;background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-top:18px;">
+<h3 style="margin-bottom:8px;">🏁 Resultado final</h3>
+<p id="finalText" style="line-height:1.5;"></p>
+<button type="button" onclick="restartQuiz()" style="margin-top:12px;padding:12px 18px;border:none;border-radius:12px;background:#FFB347;color:#1F0A3C;font-weight:800;cursor:pointer;">🔄 Reiniciar quiz</button>
+</div>
+<script>
+(function(){
+  const items=[...document.querySelectorAll('.quiz-item')];
+  let score=0,hits=0,answered=0;
+  function updatePanel(){
+    document.getElementById('score').textContent=score;
+    document.getElementById('hits').textContent=hits;
+    document.getElementById('answered').textContent=`${answered}/10`;
+    document.getElementById('errors').textContent=answered-hits;
+    document.getElementById('remaining').textContent=10-answered;
+    document.getElementById('progressBar').style.width=(answered*10)+'%';
+    let level='Iniciante';
+    if(score>=80) level='Especialista';
+    else if(score>=50) level='Avançando';
+    else if(score>=20) level='Em prática';
+    document.getElementById('level').textContent=level;
+    document.getElementById('message').textContent = answered===0 ? 'Comece o quiz!' :
+      answered<10 ? (hits>=answered/2 ? 'Bom trabalho! Continue assim.' : 'Atenção aos conceitos principais.') :
+      (score>=70 ? 'Ótimo desempenho!' : 'Revise o resumo e tente de novo.');
+    if(answered===10){
+      document.getElementById('quizFinal').style.display='block';
+      document.getElementById('finalText').textContent=`Você concluiu o quiz com ${score} pontos, ${hits} acertos e ${10-hits} erros.`;
+    }
+  }
+  items.forEach(item=>{
+    const correct=Number(item.dataset.correct);
+    const buttons=[...item.querySelectorAll('.quiz-option')];
+    const feedback=item.querySelector('.quiz-feedback');
+    buttons.forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        if(item.dataset.done==='1') return;
+        item.dataset.done='1';
+        answered++;
+        const selected=Number(btn.dataset.index);
+        buttons.forEach((b,i)=>{
+          b.disabled=true;
+          b.style.cursor='default';
+          if(i===correct){
+            b.style.background='#DCFCE7';
+            b.style.borderColor='#22C55E';
+          }
+        });
+        if(selected===correct){
+          score+=10; hits++;
+          btn.style.background='#DCFCE7';
+          btn.style.borderColor='#22C55E';
+          feedback.textContent='✅ Resposta correta!';
+          feedback.style.color='#166534';
+        }else{
+          btn.style.background='#FEE2E2';
+          btn.style.borderColor='#EF4444';
+          feedback.textContent='❌ Resposta incorreta.';
+          feedback.style.color='#991B1B';
+        }
+        updatePanel();
+      });
+    });
+  });
+  window.restartQuiz=function(){
+    score=0;hits=0;answered=0;
+    items.forEach(item=>{
+      item.dataset.done='0';
+      item.querySelector('.quiz-feedback').textContent='';
+      item.querySelectorAll('.quiz-option').forEach(btn=>{
+        btn.disabled=false;
+        btn.style.cursor='pointer';
+        btn.style.background='#fff';
+        btn.style.borderColor='#D8B4FE';
+      });
+    });
+    document.getElementById('quizFinal').style.display='none';
+    updatePanel();
+  };
+  updatePanel();
+})();
+</script>
+
+</div>
+</body>
+</html>

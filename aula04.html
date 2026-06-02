@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inovação: transformar ideias em melhorias viáveis - Fundamentos de Inteligência Artificial</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="index.html" class="btn-back">← Voltar ao Menu</a>
+<div class="aula-container">
+  <div class="aula-hero">
+    <div class="aula-num">SEMANA 2</div>
+    <h1>🚀 Inovação: transformar ideias em melhorias viáveis</h1>
+    <div class="aula-meta">
+      <span>📅 14/05/2026</span>
+      <span>⏱ 50 minutos</span>
+      <span>🎯 Central de Avisos</span>
+      <span>📚 Fundamentos de Inteligência Artificial</span>
+    </div>
+  </div>
+  <div class="card">
+    <h2>🎯 O que vamos aprender?</h2>
+    <p>Depois de pensar ideias, vamos entender o que é inovação e como diferenciar uma ideia genérica de uma melhoria viável para a escola.</p>
+    <div class="destaque">💡 Aplicação no projeto: A Central de Avisos precisa de propostas que realmente possam funcionar na prática e ajudar a comunidade escolar.</div>
+  </div>
+  <div class="card roxo">
+    <h2>📘 Conteúdo principal</h2>
+    <div class="conceito-box"><strong>Conceito central:</strong> Inovação é transformar uma ideia em algo útil, claro e possível de aplicar.</div>
+    <p>Nem toda ideia criativa vira inovação. Para isso, ela precisa resolver o problema de verdade. Uma proposta viável leva em conta a realidade da escola, o tempo, os recursos e a necessidade dos alunos. No projeto, vale mais uma solução simples que funciona do que uma ideia complicada que não sai do papel. Por isso, avaliar a viabilidade faz parte da construção de soluções com Inteligência Artificial.</p>
+  </div>
+  <div class="caderno-section">
+    <h3>📝 Resumo para o Caderno — Inovação e viabilidade</h3>
+    <ol>
+      <li>Inovação é transformar uma ideia em algo útil.</li>
+      <li>Nem toda ideia criativa é automaticamente inovadora.</li>
+      <li>Uma proposta inovadora precisa resolver o problema real.</li>
+      <li>No projeto, a solução deve ajudar a comunicação escolar.</li>
+      <li>Viabilidade significa possibilidade de aplicação na realidade da escola.</li>
+      <li>Uma solução simples pode ser mais eficiente do que uma solução complicada.</li>
+      <li>Avaliar recursos e contexto ajuda a medir a viabilidade.</li>
+      <li>A Central de Avisos precisa de melhorias que façam sentido na prática.</li>
+      <li>Ideias úteis, claras e possíveis têm mais valor no projeto.</li>
+      <li>Inovar é melhorar de forma concreta e responsável.</li>
+    </ol>
+  </div>
+  <div class="quiz-section">
+    <h2>🎮 Quiz — Inovação e viabilidade</h2>
+    <p style="opacity:0.8;margin-bottom:16px">10 questões para testar seu conhecimento!</p>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0 20px;">
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Pontos</div><div id="score" style="font-size:24px;">0</div></div>
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Acertos</div><div id="hits" style="font-size:24px;">0</div></div>
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Respondidas</div><div id="answered" style="font-size:24px;">0/10</div></div>
+    <div style="background:#fff;color:#1F0A3C;border-radius:14px;padding:14px;text-align:center;font-weight:700;"><div style="font-size:12px;opacity:.75;">Nível</div><div id="level" style="font-size:24px;">Iniciante</div></div>
+  </div>
+  <div style="background:rgba(255,255,255,.18);border-radius:999px;height:16px;overflow:hidden;margin:12px 0 10px;">
+    <div id="progressBar" style="height:100%;width:0%;background:linear-gradient(90deg,#FBBF24,#22C55E);transition:width .3s;"></div>
+  </div>
+  <div style="display:flex;gap:14px;flex-wrap:wrap;margin:0 0 18px;">
+    <div style="background:rgba(255,255,255,.14);padding:8px 14px;border-radius:999px;">⭐ <span id="message">Comece o quiz!</span></div>
+    <div style="background:rgba(255,255,255,.14);padding:8px 14px;border-radius:999px;">❌ Erros: <span id="errors">0</span></div>
+    <div style="background:rgba(255,255,255,.14);padding:8px 14px;border-radius:999px;">📌 Restantes: <span id="remaining">10</span></div>
+  </div>
+
+<div id="quizQuestions">
+<div class="quiz-item" data-correct="0" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">1. O que é inovação segundo a aula?</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Transformar uma ideia em algo útil</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Criar algo impossível</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Fazer um desenho bonito</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Decorar conceitos</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="1" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">2. Uma ideia viável é aquela que:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>É a mais complexa</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Pode funcionar na realidade da escola</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Precisa de muitos recursos</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Não resolve o problema</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="2" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">3. No projeto, vale mais:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Uma solução complicada sem uso</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Uma ideia sem teste</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Uma solução simples que funciona</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Um texto sem aplicação</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="3" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">4. O que ajuda a avaliar a viabilidade?</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>O tamanho do título</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Somente a cor da página</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>A opinião de uma pessoa só</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Recursos, contexto e necessidade real</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="0" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">5. Toda ideia criativa é inovação?</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Não</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Sim, sempre</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Só com computador</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Somente em laboratório</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="1" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">6. A Central de Avisos precisa de propostas:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Sem relação com a escola</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Que funcionem na prática</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Só imaginárias</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Muito caras</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="2" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">7. Viabilidade está ligada a:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Número de páginas</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Quantidade de emojis</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Possibilidade real de aplicação</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Tipo de letra</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="3" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">8. Uma inovação útil deve:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Ignorar os alunos</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Aumentar a confusão</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Eliminar os avisos</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Resolver um problema real</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="0" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">9. Avaliar a viabilidade ajuda a:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Escolher melhores propostas</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Apagar as ideias</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Tornar o problema maior</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Evitar qualquer mudança</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+<div class="quiz-item" data-correct="1" style="background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-bottom:16px;">
+<p style="font-weight:700;margin-bottom:12px;line-height:1.45;">10. A aula mostrou que inovar é:</p><div class="quiz-options" style="display:grid;gap:10px;">
+<button type="button" class="quiz-option" data-index="0" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">A</span>Inventar por inventar</button>
+<button type="button" class="quiz-option" data-index="1" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">B</span>Melhorar de forma concreta</button>
+<button type="button" class="quiz-option" data-index="2" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">C</span>Usar palavras difíceis</button>
+<button type="button" class="quiz-option" data-index="3" style="text-align:left;padding:12px 14px;border:2px solid #D8B4FE;border-radius:12px;background:#fff;color:#1F0A3C;font-weight:700;cursor:pointer;"><span style="display:inline-block;width:28px;height:28px;line-height:24px;text-align:center;border-radius:50%;background:#F3E8FF;color:#6B21A8;margin-right:8px;">D</span>Fazer tudo sozinho</button>
+</div><div class="quiz-feedback" style="margin-top:10px;font-weight:700;"></div></div>
+</div>
+
+<div id="quizFinal" style="display:none;background:#fff;color:#1F0A3C;border-radius:16px;padding:18px;margin-top:18px;">
+<h3 style="margin-bottom:8px;">🏁 Resultado final</h3>
+<p id="finalText" style="line-height:1.5;"></p>
+<button type="button" onclick="restartQuiz()" style="margin-top:12px;padding:12px 18px;border:none;border-radius:12px;background:#FFB347;color:#1F0A3C;font-weight:800;cursor:pointer;">🔄 Reiniciar quiz</button>
+</div>
+<script>
+(function(){
+  const items=[...document.querySelectorAll('.quiz-item')];
+  let score=0,hits=0,answered=0;
+  function updatePanel(){
+    document.getElementById('score').textContent=score;
+    document.getElementById('hits').textContent=hits;
+    document.getElementById('answered').textContent=`${answered}/10`;
+    document.getElementById('errors').textContent=answered-hits;
+    document.getElementById('remaining').textContent=10-answered;
+    document.getElementById('progressBar').style.width=(answered*10)+'%';
+    let level='Iniciante';
+    if(score>=80) level='Especialista';
+    else if(score>=50) level='Avançando';
+    else if(score>=20) level='Em prática';
+    document.getElementById('level').textContent=level;
+    document.getElementById('message').textContent = answered===0 ? 'Comece o quiz!' :
+      answered<10 ? (hits>=answered/2 ? 'Bom trabalho! Continue assim.' : 'Atenção aos conceitos principais.') :
+      (score>=70 ? 'Ótimo desempenho!' : 'Revise o resumo e tente de novo.');
+    if(answered===10){
+      document.getElementById('quizFinal').style.display='block';
+      document.getElementById('finalText').textContent=`Você concluiu o quiz com ${score} pontos, ${hits} acertos e ${10-hits} erros.`;
+    }
+  }
+  items.forEach(item=>{
+    const correct=Number(item.dataset.correct);
+    const buttons=[...item.querySelectorAll('.quiz-option')];
+    const feedback=item.querySelector('.quiz-feedback');
+    buttons.forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        if(item.dataset.done==='1') return;
+        item.dataset.done='1';
+        answered++;
+        const selected=Number(btn.dataset.index);
+        buttons.forEach((b,i)=>{
+          b.disabled=true;
+          b.style.cursor='default';
+          if(i===correct){
+            b.style.background='#DCFCE7';
+            b.style.borderColor='#22C55E';
+          }
+        });
+        if(selected===correct){
+          score+=10; hits++;
+          btn.style.background='#DCFCE7';
+          btn.style.borderColor='#22C55E';
+          feedback.textContent='✅ Resposta correta!';
+          feedback.style.color='#166534';
+        }else{
+          btn.style.background='#FEE2E2';
+          btn.style.borderColor='#EF4444';
+          feedback.textContent='❌ Resposta incorreta.';
+          feedback.style.color='#991B1B';
+        }
+        updatePanel();
+      });
+    });
+  });
+  window.restartQuiz=function(){
+    score=0;hits=0;answered=0;
+    items.forEach(item=>{
+      item.dataset.done='0';
+      item.querySelector('.quiz-feedback').textContent='';
+      item.querySelectorAll('.quiz-option').forEach(btn=>{
+        btn.disabled=false;
+        btn.style.cursor='pointer';
+        btn.style.background='#fff';
+        btn.style.borderColor='#D8B4FE';
+      });
+    });
+    document.getElementById('quizFinal').style.display='none';
+    updatePanel();
+  };
+  updatePanel();
+})();
+</script>
+
+</div>
+</body>
+</html>
